@@ -6,7 +6,7 @@ package list;
 public class test2 {
 
     public static void main(String[] args) {
-        int n = 100;
+        int n = 1000000;
         long start = System.currentTimeMillis();
         for (int i = 1; i <= n; i = i + 2) {
             if (i > 3) {
@@ -22,9 +22,7 @@ public class test2 {
 
     public static boolean isPrimeNumber(int a) {
         boolean flag = true;
-        System.out.println("init :"+ a);
         int temp = (int) Math.sqrt(a);
-        System.out.println("sqrt :"+ temp);
         if (a % 2 == 0) {
             return false;
         }
